@@ -31,7 +31,8 @@ runs:
         poetry run poe win-installer
       shell: bash
     - name: Sign Executables
-      if: inputs.mainline_build == 'true'
+      if: github.event_name == 'release'
+      # if: inputs.mainline_build == 'true'
       env:
         timestampUrl: http://timestamp.digicert.com
         installer: "_packaging/dist/gaphor-${{ inputs.version }}-installer.exe"
