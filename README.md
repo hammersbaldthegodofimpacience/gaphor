@@ -346,3 +346,4 @@ Licensed under the [Apache License v2](LICENSE.txt).
 Summary: You can do what you like with Gaphor, as long as you include the
 required notices. This permissive license contains a patent license from the
 contributors of the code.
+
